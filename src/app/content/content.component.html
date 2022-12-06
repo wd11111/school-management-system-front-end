@@ -1,4 +1,10 @@
 <div id="content">
-  <h2>Content</h2>
-  <p>Some more content goes here...</p>
+  <mat-paginator *ngIf="page && page.totalElements > 0"
+                 [length]="page?.totalElements"
+                 [pageSize]="20"
+                 [pageSizeOptions]="[5, 10, 25, 100]"
+                 aria-label="Select page"
+                 hidePageSize="true"
+  (page)="onPageEvent($event)">
+  </mat-paginator>
 </div>

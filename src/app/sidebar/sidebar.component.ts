@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PageEvent} from "@angular/material/paginator";
 
 @Component({
   selector: 'app-sidebar',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
 export class SidebarComponent {
 
   taughtClasses = ['Klasa1', 'Klasa2', 'Klasa3'];
+
 
 }
